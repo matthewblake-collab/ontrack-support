@@ -1,193 +1,380 @@
 <!DOCTYPE html>
+
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>OnTrack Focus – Privacy Policy</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>OnTrack Focus — Privacy Policy</title>
+  
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  
   <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    :root {
-      --bg: #f7f6f2;
-      --surface: #ffffff;
-      --accent: #2C6E49;
-      --accent-light: #e8f4ed;
-      --text-primary: #1a1a18;
-      --text-secondary: #5c5c57;
-      --text-muted: #9c9c96;
-      --border: #e4e3dd;
-      --pill-text: #1a4d30;
-    }
-    body {
-      font-family: 'DM Sans', sans-serif;
-      background: var(--bg);
-      color: var(--text-primary);
-      min-height: 100vh;
-    }
-    header {
-      background: var(--accent);
-      padding: 18px 32px;
-      display: flex;
-      align-items: center;
-      gap: 12px;
-    }
-    .logo-mark {
-      width: 36px; height: 36px;
-      background: rgba(255,255,255,0.18);
-      border-radius: 10px;
-      display: flex; align-items: center; justify-content: center;
-    }
-    header h1 { font-size: 18px; font-weight: 600; color: #fff; letter-spacing: -0.02em; }
-    header .tagline { font-size: 13px; color: rgba(255,255,255,0.65); margin-left: auto; }
-    .hero {
-      background: var(--accent);
-      padding: 48px 32px 68px;
-      text-align: center;
-      position: relative;
-      overflow: hidden;
-    }
-    .hero::after {
-      content: '';
-      position: absolute;
-      bottom: -1px; left: 0; right: 0;
-      height: 40px;
-      background: var(--bg);
-      border-radius: 40px 40px 0 0;
-    }
-    .hero h2 { font-size: 32px; font-weight: 600; color: #fff; letter-spacing: -0.03em; margin-bottom: 8px; }
-    .hero p { font-size: 14px; color: rgba(255,255,255,0.65); }
-    .page { max-width: 680px; margin: 0 auto; padding: 0 24px 80px; }
-    .card {
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: 16px;
-      padding: 32px;
-      margin-top: -20px;
-      position: relative; z-index: 1;
-    }
-    .updated {
-      display: inline-block;
-      font-size: 12px;
-      font-weight: 500;
-      background: var(--accent-light);
-      color: var(--pill-text);
-      padding: 4px 12px;
-      border-radius: 20px;
-      margin-bottom: 28px;
-    }
-    h3 {
-      font-size: 15px;
-      font-weight: 600;
-      color: var(--text-primary);
-      margin: 28px 0 10px;
-      padding-bottom: 8px;
-      border-bottom: 1px solid var(--border);
-    }
-    h3:first-of-type { margin-top: 0; }
-    p { font-size: 14px; line-height: 1.75; color: var(--text-secondary); margin-bottom: 12px; }
-    ul { padding-left: 20px; margin-bottom: 12px; }
-    ul li { font-size: 14px; line-height: 1.75; color: var(--text-secondary); margin-bottom: 4px; }
-    .contact-box {
-      margin-top: 28px;
-      background: var(--accent-light);
-      border-left: 3px solid var(--accent);
-      border-radius: 0 10px 10px 0;
-      padding: 16px 20px;
-    }
-    .contact-box p { margin: 0; color: var(--pill-text); font-size: 14px; }
-    .contact-box a { color: var(--accent); font-weight: 500; text-decoration: none; }
-    .contact-box a:hover { text-decoration: underline; }
-    footer {
-      text-align: center;
-      padding: 32px 24px;
-      font-size: 12px;
-      color: var(--text-muted);
-      border-top: 1px solid var(--border);
-      max-width: 680px;
-      margin: 0 auto;
-    }
-  </style>
-</head>
-<body>
 
-<header>
-  <div class="logo-mark">
-    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-      <circle cx="10" cy="10" r="7" stroke="white" stroke-width="1.8"/>
-      <path d="M10 6v4l2.5 2.5" stroke="white" stroke-width="1.8" stroke-linecap="round"/>
-    </svg>
-  </div>
-  <h1>OnTrack Focus</h1>
-  <span class="tagline">Privacy Policy</span>
-</header>
+      :root {
 
-<div class="hero">
-  <h2>Privacy Policy</h2>
-  <p>Last updated: 23 March 2026</p>
-</div>
+            --green: #4ade80;
 
-<div class="page">
-  <div class="card">
+            --bg: #080d10;
 
-    <span class="updated">Effective 23 March 2026</span>
+            --card: rgba(12,20,26,0.95);
 
-    <h3>Overview</h3>
-    <p>OnTrack Focus ("we", "our", or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, and safeguard your information when you use our iOS application.</p>
+            --border: rgba(74,222,128,0.15);
 
-    <h3>Information We Collect</h3>
-    <p>We collect the following information to provide the app's core functionality:</p>
-    <ul>
-      <li><strong>Account information</strong> — your name and email address when you register</li>
-      <li><strong>User ID</strong> — a unique identifier generated when you create an account</li>
-      <li><strong>Health & fitness data</strong> — sleep ratings, energy levels, wellbeing scores, habit completions, and supplement logs that you manually enter</li>
-      <li><strong>Group & session data</strong> — groups you create or join, sessions, RSVPs, and attendance records</li>
-      <li><strong>Usage data</strong> — basic app interaction data to help us improve performance</li>
-    </ul>
+            --text: #e2e8f0;
 
-    <h3>How We Use Your Information</h3>
-    <p>Your information is used solely to provide and improve OnTrack Focus. Specifically:</p>
-    <ul>
-      <li>To create and manage your account</li>
-      <li>To enable group features, session scheduling, and attendance tracking</li>
-      <li>To display your personal wellness trends and insights within the app</li>
-      <li>To send push notifications you have opted into</li>
-      <li>To respond to support requests</li>
-    </ul>
-    <p>We do not sell, rent, or share your personal information with third parties for advertising or marketing purposes.</p>
+            --muted: #64748b;
 
-    <h3>Data Storage</h3>
-    <p>Your data is stored securely using Supabase, a cloud database provider. Data is encrypted in transit and at rest. We retain your data for as long as your account is active. You may request deletion of your account and associated data at any time by contacting us.</p>
+      }
 
-    <h3>Third-Party Services</h3>
-    <p>OnTrack Focus uses the following third-party service:</p>
-    <ul>
-      <li><strong>Supabase</strong> — for secure data storage and user authentication. Supabase's privacy policy is available at supabase.com/privacy.</li>
-    </ul>
+      , ::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-    <h3>Push Notifications</h3>
-    <p>If you grant permission, we may send push notifications to remind you about sessions or daily check-ins. You can disable notifications at any time in your iOS Settings.</p>
+      body {
 
-    <h3>Children's Privacy</h3>
-    <p>OnTrack Focus is not directed at children under 13. We do not knowingly collect personal information from children under 13.</p>
+            background: var(--bg);
 
-    <h3>Your Rights</h3>
-    <p>You have the right to access, correct, or delete your personal data at any time. To exercise these rights, please contact us using the details below.</p>
+            color: var(--text);
 
-    <h3>Changes to This Policy</h3>
-    <p>We may update this Privacy Policy from time to time. We will notify you of any significant changes by updating the date at the top of this page.</p>
+            font-family: 'DM Sans', sans-serif;
 
-    <div class="contact-box">
-      <p>Questions about this policy? Contact us at<br>
-      <a href="mailto:OnTrackFocusSupport@coastandcountryenergy.com.au">OnTrackFocusSupport@coastandcountryenergy.com.au</a></p>
+            font-weight: 300;
+
+            min-height: 100vh;
+
+            overflow-x: hidden;
+
+      }
+
+      body::before {
+
+            content: '';
+
+            position: fixed;
+
+            inset: 0;
+
+            background-image:
+
+                    linear-gradient(rgba(74,222,128,0.03) 1px, transparent 1px),
+
+                    linear-gradient(90deg, rgba(74,222,128,0.03) 1px, transparent 1px);
+
+            background-size: 40px 40px;
+
+            pointer-events: none;
+
+            z-index: 0;
+
+      }
+
+      body::after {
+
+            content: '';
+
+            position: fixed;
+
+            top: -200px; left: 50%;
+
+            transform: translateX(-50%);
+
+            width: 600px; height: 600px;
+
+            background: radial-gradient(circle, rgba(74,222,128,0.07) 0%, transparent 70%);
+
+            pointer-events: none;
+
+            z-index: 0;
+
+      }
+
+      .wrap {
+
+            position: relative;
+
+            z-index: 1;
+
+            max-width: 680px;
+
+            margin: 0 auto;
+
+            padding: 60px 24px 80px;
+
+      }
+
+      header {
+
+            display: flex;
+
+            align-items: center;
+
+            gap: 16px;
+
+            margin-bottom: 48px;
+
+            animation: fadeUp 0.6s ease both;
+
+      }
+
+      .app-icon {
+
+            width: 56px; height: 56px;
+
+            border-radius: 14px;
+
+            background: linear-gradient(135deg, #1a2e1a, #0f1f10);
+
+            border: 1px solid var(--border);
+
+            display: flex; align-items: center; justify-content: center;
+
+            font-size: 28px; flex-shrink: 0;
+
+      }
+
+      .app-name { font-family: 'DM Serif Display', serif; font-size: 28px; letter-spacing: -0.5px; color: #fff; }
+
+      .app-name span { color: var(--green); }
+
+      .tagline { font-size: 13px; color: var(--muted); margin-top: 2px; }
+
+      .hero { margin-bottom: 40px; animation: fadeUp 0.6s 0.1s ease both; }
+
+      .hero h1 { font-family: 'DM Serif Display', serif; font-size: clamp(28px, 5vw, 42px); line-height: 1.1; letter-spacing: -1px; color: #fff; margin-bottom: 12px; }
+
+      .hero h1 em { font-style: italic; color: var(--green); }
+
+      .hero p { font-size: 14px; color: var(--muted); }
+
+      .updated { display: inline-block; background: rgba(74,222,128,0.08); border: 1px solid rgba(74,222,128,0.2); border-radius: 6px; padding: 4px 10px; font-size: 12px; color: var(--green); margin-bottom: 32px; }
+
+      .section { margin-bottom: 36px; animation: fadeUp 0.6s 0.2s ease both; }
+
+      .section h2 { font-family: 'DM Serif Display', serif; font-size: 20px; color: #fff; margin-bottom: 12px; padding-bottom: 10px; border-bottom: 1px solid rgba(74,222,128,0.1); }
+
+      .section p { font-size: 14px; color: var(--muted); line-height: 1.8; margin-bottom: 12px; }
+
+      .section p:last-child { margin-bottom: 0; }
+
+      .section ul { list-style: none; padding: 0; }
+
+      .section ul li { font-size: 14px; color: var(--muted); line-height: 1.8; padding-left: 16px; position: relative; margin-bottom: 6px; }
+
+      .section ul li::before { content: '—'; position: absolute; left: 0; color: var(--green); opacity: 0.6; }
+
+      .highlight { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 20px 24px; margin: 20px 0; position: relative; overflow: hidden; }
+
+      .highlight::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 2px; background: linear-gradient(90deg, transparent, var(--green), transparent); }
+
+      .highlight p { color: var(--text); }
+
+      .contact-link { color: var(--green); text-decoration: none; }
+
+      .contact-link:hover { text-decoration: underline; }
+
+      footer { margin-top: 56px; padding-top: 24px; border-top: 1px solid rgba(255,255,255,0.06); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; }
+
+      footer p { font-size: 12px; color: var(--muted); }
+
+      footer a { font-size: 12px; color: var(--muted); text-decoration: none; transition: color 0.2s; }
+
+      footer a:hover { color: var(--green); }
+
+      @keyframes fadeUp { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: translateY(0); } }
+
+    </style>
+
+  </head>
+
+  <body>
+
+    <div class="wrap">
+
+        <header>
+
+              <div class="app-icon">🎯</div>div>
+
+              <div>
+
+                      <div class="app-name">OnTrack <span>Focus</span></div>
+              
+                    <div class="tagline">Wellness &amp; Group Accountability</div>
+              
+              </div>
+        
+        </header>
+    
+      <div class="hero">
+      
+          <h1>Privacy <em>Policy</em></h1>
+      
+          <p>We take your privacy seriously. Here's exactly what we collect, why, and how it's protected.</p>
+      
+      </div>
+    
+      <span class="updated">Last updated: April 2026</span>
+    
+      <div class="highlight">
+      
+          <p>OnTrack Focus is built by a solo developer. We collect only what's necessary to run the app. We never sell your data. We never share it with advertisers.</p>
+      
+      </div>
+    
+      <div class="section">
+      
+          <h2>What we collect</h2>
+      
+          <ul>
+
+                  <li>Email address and display name (used for your account)</li>
+          
+                <li>Apple ID sign-in token (if you use Sign in with Apple)</li>
+          
+                <li>Habit logs, supplement logs, and daily check-in responses you enter</li>
+          
+                <li>Session attendance and group membership data</li>
+          
+                <li>Apple Health data (sleep, steps, heart rate) — only if you grant permission</li>
+          
+                <li>Device push token — used only to send you notifications you opt into</li>
+          
+                <li>Profile photo — only if you choose to upload one</li>
+          
+          </ul>
+      
+      </div>
+    
+      <div class="section">
+      
+          <h2>How we use it</h2>
+      
+          <ul>
+          
+                <li>To provide the core app features — habit tracking, groups, sessions, supplements</li>
+          
+                <li>To generate personalised AI wellness insights from your check-in history</li>
+          
+                <li>To send push notifications for sessions, reminders, and friend activity</li>
+          
+                <li>To display your progress, streaks, and personal bests</li>
+          
+                <li>To enable group accountability features like leaderboards and shared sessions</li>
+          
+          </ul>
+      
+          <p>We do not use your data for advertising, profiling, or any purpose beyond operating the app.</p>
+      
+      </div>
+    
+      <div class="section">
+      
+          <h2>Apple Health data</h2>
+      
+          <p>If you grant HealthKit permission, OnTrack Focus reads sleep, step count, and heart rate data to pre-fill your daily check-in. This data is processed on-device and stored only in your OnTrack account on our servers. We never share HealthKit data with third parties and never use it for advertising.</p>
+      
+          <p>You can revoke HealthKit access at any time in iPhone Settings → Privacy &amp; Security → Health → OnTrack Focus.</p>
+      
+      </div>
+    
+      <div class="section">
+      
+          <h2>AI wellness insights</h2>
+      
+          <p>When you request an AI insight, your recent check-in data (sleep, energy, wellbeing scores) is sent to Anthropic's API to generate a personalised response. This data is processed transiently and not stored by Anthropic beyond their standard API data handling. You can review Anthropic's privacy policy at anthropic.com.</p>
+      
+      </div>
+    
+      <div class="section">
+      
+          <h2>Where your data is stored</h2>
+      
+          <p>Your data is stored on Supabase (supabase.com), a secure cloud database platform. Data is stored in US-based data centres with encryption at rest and in transit. We use Supabase's row-level security to ensure users can only access their own data.</p>
+      
+      </div>
+    
+      <div class="section">
+      
+          <h2>Data sharing</h2>
+      
+          <p>We do not sell, rent, or share your personal data with third parties except:</p>
+      
+          <ul>
+          
+                <li>Supabase — for database hosting (data processor only)</li>
+          
+                <li>Anthropic — transiently for AI insight generation (no persistent storage)</li>
+          
+                <li>Apple — for push notification delivery via APNs</li>
+          
+                <li>When required by law</li>
+          
+          </ul>
+      
+      </div>
+    
+      <div class="section">
+      
+          <h2>Your rights</h2>
+      
+          <ul>
+          
+                <li>Access your data — all your data is visible within the app</li>
+          
+                <li>Delete your account — go to Profile → Settings → Delete Account. All your data is permanently removed.</li>
+          
+                <li>Export or correct your data — contact us at the email below</li>
+          
+                <li>Withdraw HealthKit consent — via iPhone Settings at any time</li>
+          
+          </ul>
+      
+      </div>
+    
+      <div class="section">
+      
+          <h2>Children's privacy</h2>
+      
+          <p>OnTrack Focus is not directed at children under 13. We do not knowingly collect personal information from children under 13. If you believe a child has provided us with personal data, please contact us and we will delete it promptly.</p>
+      
+      </div>
+    
+      <div class="section">
+      
+          <h2>Changes to this policy</h2>
+      
+          <p>If we make significant changes to this policy, we'll update the date above and notify users via the app where appropriate. Continued use of the app after changes constitutes acceptance of the updated policy.</p>
+      
+      </div>
+    
+      <div class="section">
+      
+          <h2>Contact</h2>
+      
+          <p>Questions about privacy? We're happy to help.</p>
+      
+          <p><a href="mailto:OnTrackFocusSupport@coastandcountryenergy.com.au" class="contact-link">OnTrackFocusSupport@coastandcountryenergy.com.au</a>a></p>
+      
+      </div>
+    
+      <footer>
+
+            <p>© 2026 OnTrack Focus. All rights reserved.</p>p>
+
+            <a href="https://matthewblake-collab.github.io/ontrack-support/">← Support</a>a>
+
+      </footer>
+
     </div>
 
-  </div>
-</div>
+  </body>
 
-<footer>
-  <strong>OnTrack Focus</strong> · &copy; 2026 Matthew Blake · All rights reserved
-</footer>
-
-</body>
-</html>
+</html>html>
+      </footer></p></p></li></li></p></p></li></li>
+          </ul></p></p></em></h1></span>
+              </div>
+        </header>
+  </body>
+  </style></title>
+  </head>
